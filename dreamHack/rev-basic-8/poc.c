@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+    char buf[]={0xAC, 0xF3, 0x0C, 0x25, 0xA3, 0x10, 0xB7, 0x25, 0x16, 0xC6, 0xB7, 0xBC, 0x07, 0x25, 0x02, 0xD5, 0xC6, 0x11, 0x07, 0xC5,0x00 };
+
+    int a;
+    for(int j=0;j<21;j++)
+    {  
+        for(int i=0;i<256;i++)
+        {  
+        a=buf[j]+i*256;
+        if(a%0xfb==0)
+        {
+            printf("%c",a/0xfb);
+        }
+    }
+}
+}
+
+// Did_y0u_brute_force?

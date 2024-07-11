@@ -1,0 +1,6 @@
+if ( input[i] * -5 != enc_flag[i] ) break;
+i += 1;
+
+
+
+input[i] = encflag/-5
