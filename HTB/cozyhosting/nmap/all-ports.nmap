@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Fri Dec  1 05:09:51 2023 as: nmap -p- -oA nmap/all-ports 10.10.11.230
+Nmap scan report for cozyhosting.htb (10.10.11.230)
+Host is up (0.18s latency).
+Not shown: 65532 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+8889/tcp open  ddi-tcp-2
+
+# Nmap done at Fri Dec  1 05:34:52 2023 -- 1 IP address (1 host up) scanned in 1501.09 seconds

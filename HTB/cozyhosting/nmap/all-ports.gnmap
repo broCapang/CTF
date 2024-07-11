@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Fri Dec  1 05:09:51 2023 as: nmap -p- -oA nmap/all-ports 10.10.11.230
+Host: 10.10.11.230 (cozyhosting.htb)	Status: Up
+Host: 10.10.11.230 (cozyhosting.htb)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 8889/open/tcp//ddi-tcp-2///	Ignored State: closed (65532)
+# Nmap done at Fri Dec  1 05:34:52 2023 -- 1 IP address (1 host up) scanned in 1501.09 seconds

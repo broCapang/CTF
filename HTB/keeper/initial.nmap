@@ -1,0 +1,33 @@
+# Nmap 7.94SVN scan initiated Sat Nov 25 17:41:46 2023 as: nmap -sC -sV -oA initial -T5 keeper.htb
+Warning: 10.10.11.227 giving up on port because retransmission cap hit (2).
+Nmap scan report for keeper.htb (10.10.11.227)
+Host is up (0.18s latency).
+Not shown: 982 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE      VERSION
+22/tcp    open     ssh          OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 35:39:d4:39:40:4b:1f:61:86:dd:7c:37:bb:4b:98:9e (ECDSA)
+|_  256 1a:e9:72:be:8b:b1:05:d5:ef:fe:dd:80:d8:ef:c0:66 (ED25519)
+80/tcp    open     http         nginx 1.18.0 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+83/tcp    filtered mit-ml-dev
+90/tcp    filtered dnsix
+687/tcp   filtered asipregistry
+1027/tcp  filtered IIS
+1052/tcp  filtered ddt
+1151/tcp  filtered unizensus
+4445/tcp  filtered upnotifyp
+5959/tcp  filtered unknown
+6666/tcp  filtered irc
+7911/tcp  filtered unknown
+8010/tcp  filtered xmpp
+9099/tcp  filtered unknown
+9917/tcp  filtered unknown
+27353/tcp filtered unknown
+34572/tcp filtered unknown
+54045/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 25 17:42:15 2023 -- 1 IP address (1 host up) scanned in 28.82 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sat Jan 27 17:55:43 2024 as: nmap -sC -sV -oA initial 10.129.239.221
+Host: 10.129.239.221 (fronttofuture.htb)	Status: Up
+Host: 10.129.239.221 (fronttofuture.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 34573/filtered/tcp/////	Ignored State: closed (997)
+# Nmap done at Sat Jan 27 17:56:38 2024 -- 1 IP address (1 host up) scanned in 55.15 seconds

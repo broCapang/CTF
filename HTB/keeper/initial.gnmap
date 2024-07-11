@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sat Nov 25 17:41:46 2023 as: nmap -sC -sV -oA initial -T5 keeper.htb
+Host: 10.10.11.227 (keeper.htb)	Status: Up
+Host: 10.10.11.227 (keeper.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 83/filtered/tcp//mit-ml-dev///, 90/filtered/tcp//dnsix///, 687/filtered/tcp//asipregistry///, 1027/filtered/tcp//IIS///, 1052/filtered/tcp//ddt///, 1151/filtered/tcp//unizensus///, 4445/filtered/tcp//upnotifyp///, 5959/filtered/tcp/////, 6666/filtered/tcp//irc///, 7911/filtered/tcp/////, 8010/filtered/tcp//xmpp///, 9099/filtered/tcp/////, 9917/filtered/tcp/////, 27353/filtered/tcp/////, 34572/filtered/tcp/////, 54045/filtered/tcp/////	Ignored State: closed (982)
+# Nmap done at Sat Nov 25 17:42:15 2023 -- 1 IP address (1 host up) scanned in 28.82 seconds

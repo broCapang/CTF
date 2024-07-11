@@ -1,0 +1,4 @@
+<?php
+
+$page = $_REQUEST['page'] ?? 'home';
+include $page;

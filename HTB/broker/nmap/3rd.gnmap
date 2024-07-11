@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Tue Nov 21 02:53:37 2023 as: nmap -sC -sV -p- -v -oA nmap/3rd -T5 10.10.11.243
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.11.243 ()	Status: Up
+Host: 10.10.11.243 ()	Status: Timeout
+# Nmap done at Tue Nov 21 03:08:37 2023 -- 1 IP address (1 host up) scanned in 900.84 seconds

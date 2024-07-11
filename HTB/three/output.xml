@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Mon Nov 20 13:14:38 2023 as: nmap -sC -sV -p 22,80 -v -oA output 10.129.130.108 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p 22,80 -v -oA output 10.129.130.108" start="1700504078" startstr="Mon Nov 20 13:14:38 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1700504078"/>
+<taskend task="NSE" time="1700504078"/>
+<taskbegin task="NSE" time="1700504078"/>
+<taskend task="NSE" time="1700504078"/>
+<taskbegin task="NSE" time="1700504078"/>
+<taskend task="NSE" time="1700504078"/>
+<taskbegin task="Ping Scan" time="1700504078"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.130.108" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1700504079" extrainfo="1 total hosts"/>
+<taskbegin task="Connect Scan" time="1700504079"/>
+<taskend task="Connect Scan" time="1700504079" extrainfo="2 total ports"/>
+<taskbegin task="Service scan" time="1700504079"/>
+<taskend task="Service scan" time="1700504085" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1700504085"/>
+<taskend task="NSE" time="1700504092"/>
+<taskbegin task="NSE" time="1700504092"/>
+<taskend task="NSE" time="1700504093"/>
+<taskbegin task="NSE" time="1700504093"/>
+<taskend task="NSE" time="1700504093"/>
+<host starttime="1700504079" endtime="1700504093"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.129.130.108" addrtype="ipv4"/>
+<hostnames>
+<hostname name="thetoppers.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.7" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 178bd425452a20b879f8e258d78e79f4 (RSA)&#xa;  256 e60f1af6328a40ef2da73b22d1c714fa (ECDSA)&#xa;  256 2de1874175f391544116b72b80c68f05 (ED25519)"><table>
+<elem key="fingerprint">178bd425452a20b879f8e258d78e79f4</elem>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCitBp4qe2+WEqMGa7+L3eEgbrqD/tH3G5PYsQ9nMFx6Erg9Rp+jn7D9QqC9GqKdraCCUQTzVoW3zqEd83Ef4iWR7VXjTb469txJU+Y8XlG/4JzegbjO6WYyfQTtQ3nLkqpa21BZEdH9ap28mcJAggj4/uHTiA3yTgZ2C+zPA6LoIS7CaB1DPK2q/8wrxDiRNv4gGiSjcxEilpL8Qls4R3Ny3QJD89hvgEdV9zapTS5T9hOfUdwbkElabjrWL4zs/E+cyHSZF5pPREiv6QkdMmk7cvMND5epXA29womDuabJsDLhrFYFecJxDmXhv6yspRAemCewOX+GnWckerKYeOf</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">e60f1af6328a40ef2da73b22d1c714fa</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEkEPksFeIH9z6Ds6r7s2Uff45kDk/PEnvXYwP0ny6pKsP2s62W3PZVCywfF3aC8ONsAqQh6zy0s44Zv8B8g+rI=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">2de1874175f391544116b72b80c68f05</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINwGMkF/JG8KPrh19vLPmhe+RC0WBQt06gh1zE3EOo2q</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="The Toppers"><elem key="title">The Toppers</elem>
+</script></port>
+</ports>
+<times srtt="233610" rttvar="131797" to="760798"/>
+</host>
+<taskbegin task="NSE" time="1700504093"/>
+<taskend task="NSE" time="1700504093"/>
+<taskbegin task="NSE" time="1700504093"/>
+<taskend task="NSE" time="1700504093"/>
+<taskbegin task="NSE" time="1700504093"/>
+<taskend task="NSE" time="1700504093"/>
+<runstats><finished time="1700504093" timestr="Mon Nov 20 13:14:53 2023" summary="Nmap done at Mon Nov 20 13:14:53 2023; 1 IP address (1 host up) scanned in 15.32 seconds" elapsed="15.32" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

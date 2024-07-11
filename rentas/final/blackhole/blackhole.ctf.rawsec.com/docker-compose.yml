@@ -1,0 +1,13 @@
+version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8081:80"
+        networks:
+            - blackhole
+networks:
+    blackhole:
+        driver: bridge

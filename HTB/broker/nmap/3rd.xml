@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Nov 21 02:53:37 2023 as: nmap -sC -sV -p- -v -oA nmap/3rd -T5 10.10.11.243 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -v -oA nmap/3rd -T5 10.10.11.243" start="1700553217" startstr="Tue Nov 21 02:53:37 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1700553217"/>
+<taskend task="NSE" time="1700553217"/>
+<taskbegin task="NSE" time="1700553217"/>
+<taskend task="NSE" time="1700553217"/>
+<taskbegin task="NSE" time="1700553217"/>
+<taskend task="NSE" time="1700553217"/>
+<taskbegin task="Ping Scan" time="1700553217"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.243" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1700553217" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1700553217"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1700553217"/>
+<taskbegin task="Connect Scan" time="1700553217"/>
+<taskprogress task="Connect Scan" time="1700553248" percent="3.56" remaining="841" etc="1700554088"/>
+<taskprogress task="Connect Scan" time="1700553278" percent="7.14" remaining="794" etc="1700554072"/>
+<taskprogress task="Connect Scan" time="1700553332" percent="13.37" remaining="746" etc="1700554077"/>
+<taskprogress task="Connect Scan" time="1700553362" percent="17.13" remaining="702" etc="1700554064"/>
+<taskprogress task="Connect Scan" time="1700553392" percent="21.31" remaining="647" etc="1700554038"/>
+<taskprogress task="Connect Scan" time="1700553422" percent="25.95" remaining="585" etc="1700554007"/>
+<taskprogress task="Connect Scan" time="1700553452" percent="30.14" remaining="545" etc="1700553997"/>
+<taskprogress task="Connect Scan" time="1700553482" percent="35.42" remaining="484" etc="1700553965"/>
+<taskprogress task="Connect Scan" time="1700553515" percent="40.12" remaining="445" etc="1700553960"/>
+<taskprogress task="Connect Scan" time="1700553590" percent="47.90" remaining="406" etc="1700553996"/>
+<taskprogress task="Connect Scan" time="1700553647" percent="54.03" remaining="366" etc="1700554013"/>
+<taskprogress task="Connect Scan" time="1700553689" percent="59.17" remaining="326" etc="1700554015"/>
+<taskprogress task="Connect Scan" time="1700553740" percent="64.72" remaining="286" etc="1700554025"/>
+<taskprogress task="Connect Scan" time="1700553788" percent="70.01" remaining="245" etc="1700554033"/>
+<taskprogress task="Connect Scan" time="1700553827" percent="74.98" remaining="204" etc="1700554031"/>
+<taskprogress task="Connect Scan" time="1700553863" percent="79.92" remaining="163" etc="1700554025"/>
+<taskprogress task="Connect Scan" time="1700553908" percent="85.29" remaining="120" etc="1700554027"/>
+<taskprogress task="Connect Scan" time="1700553953" percent="90.68" remaining="76" etc="1700554029"/>
+<taskprogress task="Connect Scan" time="1700553995" percent="95.74" remaining="35" etc="1700554030"/>
+<taskend task="Connect Scan" time="1700554117" extrainfo="1 host timed out"/>
+<taskbegin task="Service scan" time="1700554117"/>
+<taskbegin task="NSE" time="1700554117"/>
+<taskend task="NSE" time="1700554117"/>
+<taskbegin task="NSE" time="1700554117"/>
+<taskend task="NSE" time="1700554117"/>
+<taskbegin task="NSE" time="1700554117"/>
+<taskend task="NSE" time="1700554117"/>
+<host starttime="1700553217" endtime="1700554117" timedout="true"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.243" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="158998" rttvar="1113" to="163450"/>
+</host>
+<taskbegin task="NSE" time="1700554117"/>
+<taskend task="NSE" time="1700554117"/>
+<taskbegin task="NSE" time="1700554117"/>
+<taskend task="NSE" time="1700554117"/>
+<taskbegin task="NSE" time="1700554117"/>
+<taskend task="NSE" time="1700554117"/>
+<runstats><finished time="1700554117" timestr="Tue Nov 21 03:08:37 2023" summary="Nmap done at Tue Nov 21 03:08:37 2023; 1 IP address (1 host up) scanned in 900.84 seconds" elapsed="900.84" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

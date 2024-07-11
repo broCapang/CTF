@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Tue Nov 21 02:47:30 2023 as: nmap -p- -v -oA nmap/allports 10.10.11.243
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.11.243 ()	Status: Up
+Host: 10.10.11.243 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 1883/open/tcp//mqtt///, 5672/open/tcp//amqp///, 8161/open/tcp//patrol-snmp///, 35865/open/tcp/////, 61613/open/tcp//unknown///, 61614/open/tcp/////, 61616/open/tcp//unknown///	Ignored State: closed (65526)
+# Nmap done at Tue Nov 21 03:14:15 2023 -- 1 IP address (1 host up) scanned in 1605.41 seconds

@@ -1,0 +1,26 @@
+# Nmap 7.94SVN scan initiated Tue Jan 30 02:55:17 2024 as: nmap -sC -sV -Pn -oN nmap/initial 10.10.31.205
+Nmap scan report for 10.10.31.205
+Host is up (0.24s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: WIN-LU09299160F
+|   NetBIOS_Domain_Name: WIN-LU09299160F
+|   NetBIOS_Computer_Name: WIN-LU09299160F
+|   DNS_Domain_Name: WIN-LU09299160F
+|   DNS_Computer_Name: WIN-LU09299160F
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-01-30T07:56:01+00:00
+| ssl-cert: Subject: commonName=WIN-LU09299160F
+| Not valid before: 2024-01-29T07:53:05
+|_Not valid after:  2024-07-30T07:53:05
+|_ssl-date: 2024-01-30T07:57:11+00:00; +6s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 5s, deviation: 0s, median: 5s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan 30 02:57:05 2024 -- 1 IP address (1 host up) scanned in 108.29 seconds

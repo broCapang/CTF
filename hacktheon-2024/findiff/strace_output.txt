@@ -1,0 +1,264 @@
+execve("./vvsftpd", ["./vvsftpd", "./vvsftpd.conf"], 0x7ffca21fa5d8 /* 17 vars */) = 0
+brk(NULL)                               = 0x559070012000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa39e579000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=98779, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 98779, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa39e560000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=206776, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 242344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa39e524000
+mmap(0x7fa39e526000, 90112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fa39e526000
+mmap(0x7fa39e53c000, 106496, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fa39e53c000
+mmap(0x7fa39e556000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x31000) = 0x7fa39e556000
+mmap(0x7fa39e558000, 29352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa39e558000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220x\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1926256, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa39e342000
+mmap(0x7fa39e368000, 1396736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7fa39e368000
+mmap(0x7fa39e4bd000, 344064, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17b000) = 0x7fa39e4bd000
+mmap(0x7fa39e511000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000) = 0x7fa39e511000
+mmap(0x7fa39e517000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa39e517000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa39e33f000
+arch_prctl(ARCH_SET_FS, 0x7fa39e33f740) = 0
+set_tid_address(0x7fa39e33fa10)         = 33363
+set_robust_list(0x7fa39e33fa20, 24)     = 0
+rseq(0x7fa39e340060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7fa39e511000, 16384, PROT_READ) = 0
+mprotect(0x7fa39e556000, 4096, PROT_READ) = 0
+mprotect(0x55906f1c7000, 4096, PROT_READ) = 0
+mprotect(0x7fa39e5ab000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7fa39e560000, 98779)           = 0
+getrandom("\x1b\xbd\xef\xa0\x5f\xf9\xd3\x31", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x559070012000
+brk(0x559070033000)                     = 0x559070033000
+openat(AT_FDCWD, "./vvsftpd.conf", O_RDONLY|O_NONBLOCK) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0666, st_size=345, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa39e576000
+mprotect(0x7fa39e578000, 4096, PROT_NONE) = 0
+mprotect(0x7fa39e576000, 4096, PROT_NONE) = 0
+read(3, "listen=YES\nseccomp_sandbox=NO\non"..., 345) = 345
+mprotect(0x7fa39e576000, 4096, PROT_READ) = 0
+munmap(0x7fa39e576000, 12288)           = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "./vvsftpd.conf", {st_mode=S_IFREG|0666, st_size=345, ...}, 0) = 0
+getuid()                                = 0
+socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+rt_sigaction(SIGCHLD, {sa_handler=0x55906f1b66ee, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa39e37e510}, NULL, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x55906f1b66d2, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa39e37e510}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x55906f1b66ee, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa39e37e510}, NULL, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x55906f1b66d2, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fa39e37e510}, NULL, 8) = 0
+bind(3, {sa_family=AF_INET, sin_port=htons(5000), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+listen(3, 32)                           = 0
+accept(3, {sa_family=AF_INET, sin_port=htons(41518), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 33545
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=33545, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 33545
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(43778), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 35164
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=35164, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 35164
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(52436), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 35821
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=35821, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 35821
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(41488), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 35902
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=35902, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 35902
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(48830), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 37830
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=37830, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 37830
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(60332), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 37943
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=37943, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 37943
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(35918), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 44244
+close(4)                                = 0
+accept(3, {sa_family=AF_INET, sin_port=htons(49920), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 46584
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=46584, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 46584
+wait4(-1, NULL, WNOHANG, NULL)          = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=44244, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 44244
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(39004), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 47448
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=47448, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 47448
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(57880), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 50912
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=50912, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 50912
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(47746), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 53366
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=53366, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 53366
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(44352), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 58343
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=58343, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 58343
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(33456), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 59978
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=59978, si_uid=0, si_status=2, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 59978
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(44266), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 106839
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=106839, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 106839
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(60538), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 107067
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=107067, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 107067
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(54632), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 107165
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=107165, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 107165
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(50898), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 116003
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=116003, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 116003
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, {sa_family=AF_INET, sin_port=htons(33008), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 116891
+close(4)                                = 0
+accept(3, {sa_family=AF_INET, sin_port=htons(45566), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 117295
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=116891, si_uid=0, si_status=2, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 116891
+wait4(-1, NULL, WNOHANG, NULL)          = 0
+accept(3, {sa_family=AF_INET, sin_port=htons(35384), sin_addr=inet_addr("127.0.0.1")}, [28 => 16]) = 4
+clone(child_stack=NULL, flags=CLONE_NEWIPC|CLONE_NEWPID|SIGCHLD) = 117515
+close(4)                                = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=117515, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 117515
+wait4(-1, NULL, WNOHANG, NULL)          = 0
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=117295, si_uid=0, si_status=2, si_utime=0, si_stime=0} ---
+alarm(1)                                = 0
+rt_sigreturn({mask=[]})                 = -1 EINTR (Interrupted system call)
+alarm(0)                                = 1
+wait4(-1, NULL, WNOHANG, NULL)          = 117295
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (No child processes)
+accept(3, 0x7ffc8bf5f220, [28])         = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
++++ killed by SIGINT +++

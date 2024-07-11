@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sat Jan 13 19:00:10 2024 as: nmap -sC -sV -oA nmap/initial 10.10.231.154
+Host: 10.10.231.154 ()	Status: Up
+Host: 10.10.231.154 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)/, 3389/open/tcp//ssl|ms-wbt-server?///, 49152/open/tcp//msrpc//Microsoft Windows RPC/, 49153/open/tcp//msrpc//Microsoft Windows RPC/, 49154/open/tcp//msrpc//Microsoft Windows RPC/, 49158/open/tcp//msrpc//Microsoft Windows RPC/, 49159/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: closed (991)
+# Nmap done at Sat Jan 13 19:02:27 2024 -- 1 IP address (1 host up) scanned in 137.36 seconds

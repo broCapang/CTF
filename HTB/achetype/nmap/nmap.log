@@ -1,0 +1,88 @@
+# Nmap 7.94SVN scan initiated Wed Nov 22 12:36:31 2023 as: nmap -vv -sC -sV -oN nmap.log 10.129.114.251
+Nmap scan report for 10.129.114.251
+Host is up, received conn-refused (0.24s latency).
+Scanned at 2023-11-22 12:36:32 EST for 53s
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE      REASON  VERSION
+135/tcp  open  msrpc        syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds syn-ack Windows Server 2019 Standard 17763 microsoft-ds
+1433/tcp open  ms-sql-s     syn-ack Microsoft SQL Server 2017 14.00.1000.00; RTM
+| ms-sql-ntlm-info: 
+|   10.129.114.251:1433: 
+|     Target_Name: ARCHETYPE
+|     NetBIOS_Domain_Name: ARCHETYPE
+|     NetBIOS_Computer_Name: ARCHETYPE
+|     DNS_Domain_Name: Archetype
+|     DNS_Computer_Name: Archetype
+|_    Product_Version: 10.0.17763
+| ms-sql-info: 
+|   10.129.114.251:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2017 RTM
+|       number: 14.00.1000.00
+|       Product: Microsoft SQL Server 2017
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-11-22T17:27:55
+| Not valid after:  2053-11-22T17:27:55
+| MD5:   4d2f:9cf1:ffa5:d38c:5f3c:d912:0d6e:889c
+| SHA-1: bc41:de4b:e4c2:45cd:b8a5:0ab0:d687:4ac2:64b0:5bc2
+| -----BEGIN CERTIFICATE-----
+| MIIDADCCAeigAwIBAgIQE1yGEf+E/LpFDD1w/2Lq8jANBgkqhkiG9w0BAQsFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjMxMTIyMTcyNzU1WhgPMjA1MzExMjIxNzI3NTVaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPFJ5eKL
+| 3oM9fX379EnOznC/7V1nJBgTwO0nClSmANmJVOBjobtfhR4wLIzoPDqEEUmgE3L+
+| TosJd7Yk+T3tcuIeGpp3D6b9PvX1hr0X9CTIIKfAKDJYecmym9gCfwDOgw9voCbn
+| FT2WHEBWnIg3YA4NJew7u9pg+FWlF4Rv5YS1xASlXf2boqXb2IqyINMSFlcoS0UI
+| iGzalaeAM4BbeuINCQCpNziPaWA4xHUJT7iofnPv5j9rBO9m0IlkVxqKfKkvIkV+
+| 5d6sozXYqyILonSIgBwJbaR0fkW7TjuDniGUIe1Pf36LKWd+kB1kyXt0DBicVOQM
+| EOtibyTNrprpp80CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAUYGfLFbeSj0y0lqJ
+| RM1t7x0fvhxRgZdkM/sMet6ao4TrPmKB9GWph0VwfUvEUSpUzNDbrCCvVU2/k2nH
+| SOW1tSBCTR3Uz0ozNMIaQHMMdLgrHkNpLFDPBNz8JcP0cG1RtYtxYNOYvoNwvxnT
+| LFKTmNIvYlKlfabCUWgHoSR336VhVLH/+4uNuuOsBwm1c3iL+dmxYBCl3VM4sIhO
+| 0goY5wXnTL0+Xpl/N7gW/uUSEM1gfN38NPxxLK9qACNdaoiz1KzX30pXWE2kSmUC
+| EnyuvVayVdgecHgYHP9AT0t75kfClbyN4IT9bJQUfLbv9ZIPQopNRvPciVS91Tcu
+| J7D1cg==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-11-22T17:37:28+00:00; +3s from scanner time.
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 63321/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 58856/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 13195/udp): CLEAN (Timeout)
+|   Check 4 (port 29525/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2023-11-22T17:37:18
+|_  start_date: N/A
+|_clock-skew: mean: 1h36m03s, deviation: 3h34m41s, median: 2s
+| smb-os-discovery: 
+|   OS: Windows Server 2019 Standard 17763 (Windows Server 2019 Standard 6.3)
+|   Computer name: Archetype
+|   NetBIOS computer name: ARCHETYPE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2023-11-22T09:37:17-08:00
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 22 12:37:25 2023 -- 1 IP address (1 host up) scanned in 53.80 seconds

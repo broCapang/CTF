@@ -1,0 +1,71 @@
+# Nmap 7.94SVN scan initiated Tue Mar  5 06:05:30 2024 as: nmap -sC -sV -oN initial prison.ctf.rawsec.com
+Nmap scan report for prison.ctf.rawsec.com (103.28.91.24)
+Host is up (0.20s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     OpenResty web app server
+|_http-server-header: openresty
+443/tcp  open  ssl/http OpenResty web app server
+|_http-title: ChyperSecurity Inc
+| ssl-cert: Subject: commonName=prison.ctf.rawsec.com
+| Subject Alternative Name: DNS:prison.ctf.rawsec.com
+| Not valid before: 2024-03-05T00:27:44
+|_Not valid after:  2024-06-03T00:27:43
+|_http-server-header: openresty
+8008/tcp open  http
+|_http-title: Did not follow redirect to https://prison.ctf.rawsec.com:8015/
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 302 Found
+|     Location: https://:8015/nice%20ports%2C/Tri%6Eity.txt%2ebak
+|     Connection: close
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     Content-Security-Policy: frame-ancestors 'self'
+|   GenericLines, HTTPOptions, RTSPRequest, SIPOptions: 
+|     HTTP/1.1 302 Found
+|     Location: https://:8015
+|     Connection: close
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     Content-Security-Policy: frame-ancestors 'self'
+|   GetRequest: 
+|     HTTP/1.1 302 Found
+|     Location: https://:8015/
+|     Connection: close
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|_    Content-Security-Policy: frame-ancestors 'self'
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8008-TCP:V=7.94SVN%I=7%D=3/5%Time=65E6FC90%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,D3,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:8015/
+SF:\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Pro
+SF:tection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\r\nC
+SF:ontent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r\n")%r(FourOh
+SF:FourRequest,F6,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:8015
+SF:/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nX-Fram
+SF:e-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-
+SF:Content-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-a
+SF:ncestors\x20'self'\r\n\r\n")%r(GenericLines,D2,"HTTP/1\.1\x20302\x20Fou
+SF:nd\r\nLocation:\x20https://:8015\r\nConnection:\x20close\r\nX-Frame-Opt
+SF:ions:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Conte
+SF:nt-Type-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancest
+SF:ors\x20'self'\r\n\r\n")%r(HTTPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\n
+SF:Location:\x20https://:8015\r\nConnection:\x20close\r\nX-Frame-Options:\
+SF:x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Typ
+SF:e-Options:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x2
+SF:0'self'\r\n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20302\x20Found\r\nLocati
+SF:on:\x20https://:8015\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAM
+SF:EORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Opti
+SF:ons:\x20nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self
+SF:'\r\n\r\n")%r(SIPOptions,D2,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20
+SF:https://:8015\r\nConnection:\x20close\r\nX-Frame-Options:\x20SAMEORIGIN
+SF:\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x2
+SF:0nosniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\n\r
+SF:\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  5 06:09:20 2024 -- 1 IP address (1 host up) scanned in 230.96 seconds

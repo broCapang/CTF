@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Mon Nov 20 12:49:58 2023 as: nmap -sC -sV -p 80,5985,7680 -v -oA allports 10.129.5.217
+# Ports scanned: TCP(3;80,5985,7680) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.5.217 (unika.htb)	Status: Up
+Host: 10.129.5.217 (unika.htb)	Ports: 80/open/tcp//http//Apache httpd 2.4.52 ((Win64) OpenSSL|1.1.1m PHP|8.1.1)/, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 7680/open/tcp//pando-pub?///
+# Nmap done at Mon Nov 20 12:51:12 2023 -- 1 IP address (1 host up) scanned in 74.69 seconds

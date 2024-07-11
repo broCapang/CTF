@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Thu Jan 11 02:37:21 2024 as: nmap -sC -sV -oA nmap/initial 10.10.11.252
+Host: 10.10.11.252 (bizness.htb)	Status: Up
+Host: 10.10.11.252 (bizness.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0/, 443/open/tcp//ssl|http//nginx 1.18.0/	Ignored State: closed (997)
+# Nmap done at Thu Jan 11 02:45:04 2024 -- 1 IP address (1 host up) scanned in 463.26 seconds

@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Mon Nov 20 13:14:38 2023 as: nmap -sC -sV -p 22,80 -v -oA output 10.129.130.108
+# Ports scanned: TCP(2;22,80) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.130.108 (thetoppers.htb)	Status: Up
+Host: 10.129.130.108 (thetoppers.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/
+# Nmap done at Mon Nov 20 13:14:53 2023 -- 1 IP address (1 host up) scanned in 15.32 seconds
