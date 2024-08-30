@@ -1,0 +1,16 @@
+           retrieve_flag(long input)
+
+{
+  uint i;
+  
+  i = 0;
+  while( true ) {
+    if (13 < i) {
+      return 1;
+    }
+    if (*(char *)(input + (int)i) != "thiswillbeflag"[(int)i]) break;
+    usleep(100000);
+    i = i + 1;
+  }
+  return 0;
+}

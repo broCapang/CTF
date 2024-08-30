@@ -1,0 +1,20 @@
+  local_38 = 0x3935643530356435;
+  local_30 = 0x6532353530326131;
+  local_28 = 0x3233643339323734;
+  local_20 = 0x3365336335;
+  uStack_1b = 0x393531;
+  uStack_18 = 0x63313932;
+  local_46 = 0x7361616d616e;
+  uStack_40 = 0x6c61;
+  uStack_3e = 0x6861626173;
+  len = strlen((char *)&local_46);
+  local_10 = (int)len;
+  for (i = 0; i < 37; i = i + 1) {
+    *(byte *)((long)&local_38 + (long)(int)i) =
+         *(byte *)((long)&local_38 + (long)(int)i) ^
+         *(byte *)((long)&local_46 + (long)((int)i % (int)len));
+  }
+  iVar1 = strcmp(input,(char *)&local_38);
+  if (iVar1 == 0) {
+    printf("Correct! The flag is: %s\n",&local_38);
+  }

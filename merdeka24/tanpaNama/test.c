@@ -1,0 +1,94 @@
+int main(){
+  char ans [48];
+  char second [38];
+  char first [38];
+  char temp;
+  int i;
+  
+  first[0] = -0x78;
+  first[1] = '{';
+  first[2] = 'R';
+  first[3] = 'e';
+  first[4] = -100;
+  first[5] = 'u';
+  first[6] = -0x80;
+  first[7] = -0x46;
+  first[8] = -0x6b;
+  first[9] = -0x62;
+  first[10] = -0x56;
+  first[0xb] = -0x19;
+  first[0xc] = -0x3e;
+  first[0xd] = -2;
+  first[0xe] = -0x39;
+  first[0xf] = -0x1b;
+  first[0x10] = -0x22;
+  first[0x11] = -0x5b;
+  first[0x12] = -0x3b;
+  first[0x13] = -0x74;
+  first[0x14] = -0x7c;
+  first[0x15] = -0x59;
+  first[0x16] = -0x68;
+  first[0x17] = -0x71;
+  first[0x18] = 'R';
+  first[0x19] = 'x';
+  first[0x1a] = 'n';
+  first[0x1b] = '2';
+  first[0x1c] = '?';
+  first[0x1d] = 'N';
+  first[0x1e] = -0x7c;
+  first[0x1f] = '\\';
+  first[0x20] = 'm';
+  first[0x21] = -0x43;
+  first[0x22] = -0x7b;
+  first[0x23] = -0x78;
+  first[0x24] = -0x6c;
+  first[0x25] = -0x5f;
+  second[0] = '\v';
+  second[1] = '\x16';
+  second[2] = '!';
+  second[3] = ',';
+  second[4] = '7';
+  second[5] = 'B';
+  second[6] = 'M';
+  second[7] = 'X';
+  second[8] = 'c';
+  second[9] = 'n';
+  second[10] = 'y';
+  second[0xb] = -0x7c;
+  second[0xc] = -0x71;
+  second[0xd] = -0x66;
+  second[0xe] = -0x71;
+  second[0xf] = -0x7c;
+  second[0x10] = 'y';
+  second[0x11] = 'n';
+  second[0x12] = 'c';
+  second[0x13] = 'X';
+  second[0x14] = 'M';
+  second[0x15] = 'B';
+  second[0x16] = '7';
+  second[0x17] = ',';
+  second[0x18] = '!';
+  second[0x19] = '\x16';
+  second[0x1a] = '\v';
+  second[0x1b] = '\0';
+  second[0x1c] = '\v';
+  second[0x1d] = '\x16';
+  second[0x1e] = '!';
+  second[0x1f] = ',';
+  second[0x20] = '7';
+  second[0x21] = 'B';
+  second[0x22] = 'M';
+  second[0x23] = 'X';
+  second[0x24] = 'c';
+  second[0x25] = 'n';
+  for (i = 0; i < 38; i = i + 1) {
+    temp = first[i] - second[i];
+    if (temp < 0) {
+      temp = '\x00';
+    }
+    ans[i] = temp;
+  }
+  printf("%s\n",ans);
+
+  return 0;
+}
