@@ -1,0 +1,45 @@
+int main(){int local_b8 [32];
+  local_b8[0] = 0x43;
+  local_b8[1] = 0xa4;
+  local_b8[2] = 0x41;
+  local_b8[3] = 0xae;
+  local_b8[4] = 0x42;
+  local_b8[5] = 0xfc;
+  local_b8[6] = 0x73;
+  local_b8[7] = 0xb0;
+  local_b8[8] = 0x6f;
+  local_b8[9] = 0x72;
+  local_b8[10] = 0x5e;
+  local_b8[0xb] = 0xa8;
+  local_b8[0xc] = 0x65;
+  local_b8[0xd] = 0xf2;
+  local_b8[0xe] = 0x51;
+  local_b8[0xf] = 0xce;
+  local_b8[0x10] = 0x20;
+  local_b8[0x11] = 0xbc;
+  local_b8[0x12] = 0x60;
+  local_b8[0x13] = 0xa4;
+  local_b8[0x14] = 0x6d;
+  local_b8[0x15] = 0x46;
+  local_b8[0x16] = 0x21;
+  local_b8[0x17] = 0x40;
+  local_b8[0x18] = 0x20;
+  local_b8[0x19] = 0x5a;
+  local_b8[0x1a] = 0x2c;
+  local_b8[0x1b] = 0x52;
+  local_b8[0x1c] = 0x2d;
+  local_b8[0x1d] = 0x5e;
+  local_b8[0x1e] = 0x2d;
+  local_b8[0x1f] = 0xc4;
+int string
+
+    for (int i = 0; i < 32; i =i+1){
+    	local_b8[i-0x20] / (i%2-1) ^ i 
+    } 
+                
+		    (local_b8[(long)(int)i + -0x20] = ((int)input[(int)i] ^ i) * ((int)i % 2 + 1),
+                local_b8[(long)(int)i + -0x20] == local_b8[(int)i])); i = i + 1)
+
+
+  return;
+}
