@@ -1,0 +1,36 @@
+#define MAX_BUF 0x200
+
+
+struct MinerAccount {
+    float cash;
+    float debt_balance;
+    int mining_attempts;
+    char name[0x20];
+};
+
+
+void change_name(struct MinerAccount *account) {
+    if (has_name_rights != 1) {
+        printf("You do not have the right to change your name.\n");
+        printf("Please purchase a name to gain the rights to rename your no-name.\n");
+        return;
+    }
+    if(account->debt_balance != 0) {
+        printf("You still have debts to repay.\n");
+        printf("Pay off your debts to rename your no-name.\n");
+        return;
+    }
+    printf("Enter new name.\n");
+    read(0, account->name, MAX_BUF);
+
+    printf("Name updated successfully.\n");
+}
+
+
+4294967295
+
+16777216
+
+    00000070  41 41 41 41  41 41 41 41  41 41 41 41  41 0a 90 9d  │AAAA│AAAA│AAAA│A···│
+    00000080  02 50 41 7f  0a 43 75 72  72 65 6e 74  20 63 61 73  │·PA·│·Cur│rent│ cas│
+

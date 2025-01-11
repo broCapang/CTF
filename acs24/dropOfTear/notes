@@ -1,0 +1,38 @@
+          if (local_134 == 101) {
+            puts("test your luck.");
+            __isoc99_scanf(&%c,&b_var);
+            getchar();
+            if ('D' < (byte)b_var) {
+              puts("wrong choice");
+                    /* WARNING: Subroutine does not return */
+              exit(-1);
+            }
+            b_var = local_128[(int)((b_var & 0xff) - 0x41)]
+
+
+
+
+
+
+b_var = 101
+
+b_var = local_128[((b_var&0xff) - 0x41)]
+
+  local_128[0] = 0xdeadbeef;
+  local_128[1] = 0xcafebabe;
+  local_128[2] = 0x1337c0d3;
+  local_128[3] = 0x79427942;
+
+
+
+answer
+
+101
+D
++
+-1922535997
+2069054273
+
+
+102
+

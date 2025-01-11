@@ -1,0 +1,8 @@
+start:
+mov eax, 0x12
+  mov ebx, 0xFF
+  mov ecx, 2
+  div ebx
+  add ebx, 10
+  sub eax, 2
+
